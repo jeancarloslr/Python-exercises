@@ -1,7 +1,7 @@
 print("Insira um número abaixo")
 number = int(input())
 
-cont = 0
+cont = 1
 
 while cont <= number:
   print("Hello World")

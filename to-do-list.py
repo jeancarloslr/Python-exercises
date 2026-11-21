@@ -1,5 +1,14 @@
+import os
+
 tarefas = []
 number = 0
+
+def clean_terminal():
+  os.system("cls")
+
+def mostrar_tarefas():
+ for tarefa in tarefas:
+  print(tarefa)
 
 while number < 4:
  
@@ -11,16 +20,23 @@ while number < 4:
 
  print("Oque deseja fazer?")
  number = int(input())
+ clean_terminal()
 
  if number == 1:
   print("Qual sua tarefa?")
   tarefa = input()
   tarefas.append(tarefa)
+  clean_terminal()
 
  elif number == 2:
-  for i in tarefas:
-   print(i)
+  mostrar_tarefas()
 
+ elif number == 3:
+  if len(tarefas) == 0:
+   print("Não há tarefas.")
 
+  else:
+   print("Qual tarefa deseja remover")
+   mostrar_tarefas()
 
-
+  

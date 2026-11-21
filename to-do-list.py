@@ -36,7 +36,21 @@ while number < 4:
    print("Não há tarefas.")
 
   else:
+   
    print("Qual tarefa deseja remover")
-   mostrar_tarefas()
+   i = 1
+
+   for tarefa in tarefas:
+     print(i, tarefa)
+     i = i + 1
+    
+   remover_tarefa = int(input())
+   remover_tarefa = remover_tarefa - 1
+                     
+   tarefas.pop(remover_tarefa)
+
+ elif number >= 4:
+  print("Encerrando...")
+  break
 
   

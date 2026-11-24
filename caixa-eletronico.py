@@ -1,4 +1,3 @@
-sair = False
 saldo_atual = 0
 numero_operacao = 0
 
@@ -23,7 +22,7 @@ while numero_operacao < 4:
   print("Que valor deseja sacar?")
   valor_saque = int(input())
   saldo_atual -= valor_saque
-
+  
  else:
   print("Encerrando...")
   

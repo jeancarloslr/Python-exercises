@@ -7,6 +7,10 @@ print(response.status_code)
 
 character = response.json()
 
-print(character["name"])
-print(character["gender"])
-print(character["species"])
+print("====FICHA DO PERSONAGEM====")
+
+print(f"Nome: {character["name"]}")
+print(f"Status: {character["status"]}")
+print(f"Genero: {character["gender"]}")
+print(f"Espécie: {character["species"]}")
+

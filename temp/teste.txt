@@ -1,1 +1,0 @@
-Isso não deveria ir para o git.

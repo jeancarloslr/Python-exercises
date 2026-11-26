@@ -5,5 +5,3 @@ total_nomes = (nomes.union(sobrenomes))
 
 valores_comun = (nomes.intersection(sobrenomes))
 print(valores_comun)
-
-print("Hello World")

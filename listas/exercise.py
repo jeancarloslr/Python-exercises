@@ -6,3 +6,5 @@ print(filmes)
 
 filmes.pop(0)
 print(filmes)
+
+print("Hello world(testando)")
